@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تعلم الشطرنج</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard-1.0.0.min.css">
+  <style>
+    body { font-family: Arial; text-align: center; direction: rtl; background: #f0f0f0; }
+    #board { width: 300px; margin: auto; }
+  </style>
+</head>
+<body>
+  <h1>فعالية تعليم الشطرنج</h1>
+  <p>اسحب القطع على الرقعة!</p>
+  <div id="board"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/chessboard-1.0.0.min.js"></script>
+  <script>
+    var board = Chessboard('board', {
+      draggable: true,
+      position: 'start'
+    });
+  </script>
+</body>
+</html>
